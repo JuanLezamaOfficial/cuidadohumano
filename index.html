@@ -861,11 +861,11 @@
             <div class="alert-item">
                 <i class="fas fa-bullhorn"></i>
                 <div>
-                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Chi%20Kung">Chi Kung todos los martes a las 10:00 AM</a></span>
-                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Reiki">Reiki todos los jueves a las 10:00 AM</a></span>
-                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Acción%20por%20la%20felicidad">Acción por la felicidad para hoy</a></span>
-                    <span class="alert-news"><a href="#nuevo-estudio">Nuevo estudio sobre terapias alternativas</a></span>
-                    <span class="alert-news"><a href="#conferencia-bioetica">Charla sobre la ciencia de cuidar</a></span>
+                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Chi%20Kung">Reiki: los martes a las 10:00 AM</a></span>
+                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Reiki">Chi Kung: jueves a las 10:00 AM</a></span>
+                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Test%20de%20la%20felicidad">Test de la felicidad</a></span>
+                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Estudio%20Clínico%20Terápias%20Alternativas">Nuevo estudio clínico sobre terapias alternativas</a></span>
+                    <span class="alert-news"><a href="https://wa.me/584127656134?text=Rotary%20Talk%20|%20La%20ciencia%20de%20cuidar">Rotary Talk: La ciencia de cuidar</a></span>
                 </div>
             </div>
         </div>
@@ -994,80 +994,189 @@
         </div>
     </header>
 
-    <section class="news-feeds">
-        <div class="container">
+                    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimas Noticias - Cuidado Humano 247</title>
+    <style>
+        .feed-card {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1230px;
+            margin: 20px auto;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .feed-header {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 0px;
+            border-bottom: 2px solid #f1f1f1;
+        }
+        
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .news-title {
+            color: #2980b9;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .news-title a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        
+        .news-excerpt {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85em;
+            color: #7f8c8d;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            text-align: center;
+            padding: 20px;
+            background: #fde8e8;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .feed-card {
+                padding: 15px;
+                margin: 10px;
+            }
             
-            <div class="feeds-container">
-                <div class="feed-card">
-                    <h3><i class="fas fa-podcast"></i> Podcast</h3>
-                    <div class="feed-item">
-                        <a href="https://youtu.be/MdJH8JhDix4">Dr. David Linden: Life, Death & the Neuroscience of Your Unique Experience | Brain Tools Daily</a>
-                        <div class="feed-date">8 de mayo de 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.youtube.com/watch?v=Rz29AXAB9hc">Cultivando la felicidad - DeePak Chopra</a>
-                        <div class="feed-date">27 de abril de 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.paho.org/es/documentos/hablemos-salud-ep-1-5-anos-covid-19-riesgo-gripe-aviar">Hablemos de salud - Ep. 1: 5 años de COVID-19 y el riesgo de la gripe aviar</a>
-                        <div class="feed-date">25 de marzo de 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="#">Hackea el sistema: aprender es más que solo aprobar | Diego Apolo | TEDxUISRAEL</a>
-                        <div class="feed-date">8 de febrero de 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.science.org/content/podcast/rising-infections-dusty-devil-and-nailing-down-when-our-ancestors-became-meat-eaters">Rising infections from a dusty devil, and nailing down when our ancestors became meat eaters</a>
-                        <div class="feed-date">17 de enero de 2025</div>
-                    </div>
-                </div>
-                
-                <div class="feed-card">
-                    <h3><i class="fas fa-book"></i> Publicaciones</h3>
-                    <div class="feed-item">
-                        <a href="https://iris.paho.org/handle/10665.2/61354">Tratamiento de las enfermedades infecciosas 2024-2026. Novena edición</a>
-                        <div class="feed-date">9 mayo 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.who.int/es/publications/i/item/9789240101395">Prevención de la resistencia a los antimicrobianos y sensibilización temática en las escuelas: recomendaciones para docentes y responsables de las políticas</a>
-                        <div class="feed-date">2 abril 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://iris.paho.org/handle/10665.2/64292">Financiamiento de los cuidados a largo plazo: enseñanzas para los entornos de ingresos bajos y medianos. Sinopsis 1. Factores que impulsan la demanda de cuidados a largo plazo</a>
-                        <div class="feed-date">12 febrero 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.paho.org/es/documentos/fortalecimiento-atencion-enfermedades-no-transmisibles-region-americas">Fortalecimiento de la atención de las enfermedades no transmisibles en la Región de las Américas</a>
-                        <div class="feed-date">29 enero 2025</div>
-                    </div>
-                </div>
-                
-                <div class="feed-card">
-                    <h3><i class="fas fa-newspaper"></i> Noticias</h3>
-                    <div class="feed-item">
-                        <a href="https://www.nature.com/articles/d41586-025-01061-8">Nature: Why you should write your PhD thesis backwards</a>
-                        <div class="feed-date">mayo 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://cuidadohumano247.blogspot.com/2025/04/dia-internacional-de-la-salud-y.html">CH: Día Internacional de la Salud y Seguridad Laboral: Un Compromiso Global</a>
-                        <div class="feed-date">abril 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.paho.org/es/documentos/deteccion-temprana-casos-humanos-influenza-aviar-ah5n1">OPS: Detección temprana de casos humanos de influenza aviar A(H5N1)</a>
-                        <div class="feed-date">marzo 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="#">NEJM: Highly Pathogenic Avian Influenza A(H5N1) Virus Infections in Humans</a>
-                        <div class="feed-date">febrero 2025</div>
-                    </div>
-                    <div class="feed-item">
-                        <a href="https://www.paho.org/es/calendario">OPS: Calendarios de OPS</a>
-                        <div class="feed-date">enero 2025</div>
-                    </div>
-                </div>
-            </div>
+            .news-meta {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="feed-card">
+        <h2 class="feed-header">      </h2>
+        <div id="blog-posts-container">
+            <div class="loading">Cargando artículos recientes...</div>
         </div>
-    </section>
+    </div>
+
+    <script>
+        // Función para cargar el feed RSS
+        function loadRSSFeed() {
+            const container = document.getElementById('blog-posts-container');
+            
+            // URL de tu feed RSS de Blogger
+            const rssFeedUrl = 'https://cuidadohumano247.blogspot.com/feeds/posts/default?alt=rss';
+            
+            // Usamos el servicio de Google Feed API (requiere internet)
+            const googleFeedApiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssFeedUrl)}`;
+            
+            fetch(googleFeedApiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('No se pudo cargar el feed');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status !== 'ok') {
+                        throw new Error('Formato de feed incorrecto');
+                    }
+                    
+                    container.innerHTML = '';
+                    
+                    // Mostrar los primeros 5 posts (puedes ajustar este número)
+                    const postsToShow = data.items.slice(0, 3);
+                    
+                    if (postsToShow.length === 0) {
+                        container.innerHTML = '<div class="error-message">No hay publicaciones recientes.</div>';
+                        return;
+                    }
+                    
+                    postsToShow.forEach(post => {
+                        const postElement = document.createElement('div');
+                        postElement.className = 'news-item';
+                        
+                        // Formatear la fecha
+                        const postDate = new Date(post.pubDate);
+                        const formattedDate = postDate.toLocaleDateString('es-ES', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                        
+                        // Crear extracto (eliminar etiquetas HTML)
+                        const excerpt = post.description.replace(/<[^>]*>/g, '').substring(0, 200) + '...';
+                        
+                        postElement.innerHTML = `
+                            <h3 class="news-title"><a href="${post.link}" target="_blank">${post.title}</a></h3>
+                            <div class="news-excerpt">${excerpt}</div>
+                            <div class="news-meta">
+                                <span>Publicado el ${formattedDate}</span>
+                                <a href="${post.link}" target="_blank">Leer más →</a>
+                            </div>
+                        `;
+                        
+                        container.appendChild(postElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar el feed RSS:', error);
+                    container.innerHTML = `
+                        <div class="error-message">
+                            <p>No se pudieron cargar las publicaciones recientes.</p>
+                            <p>Visita nuestro <a href="https://cuidadohumano247.blogspot.com/" target="_blank">blog</a> directamente.</p>
+                        </div>
+                    `;
+                });
+        }
+        
+        // Cargar el feed cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', loadRSSFeed);
+    </script>
+</body>
+</html>
+
+
     
     <footer>
         <div class="container">
@@ -1106,8 +1215,8 @@
                 <div class="footer-col">
                     <h3>Contacto</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Av. 1, Mérida</li>
-                        <li><i class="fas fa-phone"></i><a href="tel:+584127656134"> +584127656134</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> A0102, B15, Osuna R.</li>
+                        <li><i class="fa fa-whatsapp"></i><a href="tel:+584127656134"> +584127656134</a></li>
                         <li><i class="fas fa-envelope"></i><a href="mailto:licdo.juanlezama@gmail.com"> licdo.juanlezama@gmail.com</a></li>
                         <li><i class="fas fa-clock"></i> 24/7</li>
                     </ul>
